@@ -1,13 +1,14 @@
 {
-  "name": "siskin-cli",
-  "version": "1.0.0",
+  "name": "tdesign-kit",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
     "siskin": "./bin/boot.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "watch": "^1.0.2"
   },
   "devDependencies": {
+    "@types/node": "^16.11.12",
     "cz-conventional-changelog": "^3.3.0"
   },
   "config": {

@@ -1,8 +1,8 @@
-# Siskin-cli
+# TDesign Kit
 
-A simple cli tool to manage and clone some repo that frequently used
+A simple cli tool to manage work kit
 
-## plan
+## Todo
 
-1. write a check list to statistical frequently used repo
-2. 💰to be continued...
+- file transfer
+- ui test
