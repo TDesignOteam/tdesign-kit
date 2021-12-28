@@ -24,14 +24,14 @@ const welcome = async () => {
 welcome().then((res) => {
   program;
   program
-    .command("init <name>")
-    .description("init project")
-    .action(require("../lib/init/index.ts"));
+  .command("trans")
+  .description("transfer code")
+  .action(require("../lib/transfer/index.js"));
 
   program
     .command("refresh")
     .description("monitoring vue2.0 adn vue3.0")
-    .action(require("../lib/init/refresh.ts"));
+    .action(require("../lib/init/refresh.js"));
 
   program
     .command("vue-next-check")

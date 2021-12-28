@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "siskin": "./bin/boot.js"
+    "tdk": "./bin/boot.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "PY",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
