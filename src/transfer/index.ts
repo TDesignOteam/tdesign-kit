@@ -1,12 +1,12 @@
-const { log, logError } = require("../utils/logger");
-const { getFramework, getComponents } = require("./helper/index");
-const { transDemos, transComponents } = require("./helper/file");
-const ora = require('ora')
+import { log, logError } from '../utils/logger'
+import { transDemos, transComponents } from './helper/file'
+import { getFramework, getComponents } from './helper/index'
+import child_process from 'child_process'
 
-const spawn = async (...args) => {
-  const { spawn } = require("child_process");
+const spawn = async (...args: any[]): Promise<void> => {
+  
   return new Promise((resolve) => {
-    const proc = spawn(...args);
+    const proc = child_process.spawn(...args);
     proc.stdout.pipe(process.stdout);
     proc.stderr.pipe(process.stderr);
     proc.on("close", () => {
@@ -15,7 +15,7 @@ const spawn = async (...args) => {
   });
 };
 
-module.exports = async (name) => {
+module.exports = async () => {
   // check template
   try {
     const fromFramework = await getFramework('from');

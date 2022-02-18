@@ -1,7 +1,7 @@
-const chalk = require("chalk");
-const gradient = require("gradient-string");
+import chalk from 'chalk'
+import gradient from 'gradient-string'
 
-exports.logScreen = (content) => {
+export const logScreen = (content: string) => {
   return (
     console.log(`${chalk.bold(
       gradient(["#699ef5", "#0052d9"]).multiline(
@@ -11,7 +11,7 @@ exports.logScreen = (content) => {
   );
 }
 
-exports.log = (content) => {
+export const log = (content: string) => {
   return (
     console.log(`${chalk.bold(
       gradient(["#699ef5", "#0052d9"])("tdesign-kit：")
@@ -19,7 +19,7 @@ exports.log = (content) => {
   );
 }
 
-exports.logError = (content) => {
+export const logError = (content: string) => {
   return (
     console.log(`🐞 ${chalk.redBright(
       content
@@ -28,7 +28,7 @@ exports.logError = (content) => {
 }
 
 
-exports.gradientString = (content) => {
+export const gradientString = (content: string) => {
   return `${chalk.bold(
     gradient(["#699ef5", "#0052d9"])(content)
   )}`
