@@ -1,10 +1,9 @@
-#!/usr/bin/env node
 const program = require('commander')
 const { promisify } = require('util')
 const version = require('../package.json').version
 const chalk = require("chalk");
 
-const { logScreen } = require("../lib/utils/logger.js")
+const { logScreen } = require("./utils/logger.js")
 const figlet = promisify(require('figlet'))
 const clear = require('clear')
 
