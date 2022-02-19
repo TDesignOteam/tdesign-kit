@@ -34,6 +34,7 @@ tdk trans
 ## 📝 Todo
 
 - typescript refactor
+- optionsAPI, jsx vue2 and vue3 diff list
 - release npm package
 - jsx component AST compile progress
 - vue2、vue3 jsx component mutual transfer
