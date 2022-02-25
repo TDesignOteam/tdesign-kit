@@ -35,6 +35,7 @@ tdk trans
 
 - typescript refactor
 - optionsAPI, jsx vue2 and vue3 diff list
+- support starter vue3 and vue2 transfer
 - release npm package
 - jsx component AST compile progress
 - vue2、vue3 jsx component mutual transfer
